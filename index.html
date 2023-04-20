@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/icons8-laptop-16.png" />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/1cebc5a491.js"
       crossorigin="anonymous"
     ></script>
-    <title>Justin Ribarich</title>
+    <title>Justin Ribarich Portfolio</title>
   </head>
   <body>
     <nav>
@@ -39,7 +40,13 @@
             ></a
           >
         </li>
-        <li><a href="" class="button">Resume</a></li>
+        <li>
+          <a
+            href="https://www.dropbox.com/s/veq0348ovhsrffg/Justin%20Ribarich%20Resume.docx.pdf?dl=0"
+            class="button"
+            >Resume</a
+          >
+        </li>
       </ul>
     </nav>
     <section id="intro">
@@ -54,14 +61,85 @@
         <a href="https://www.caribujs.com/">Caribu</a>
       </p>
     </section>
-    <section id="contact">
-      <h2>Contact me</h2>
-      <p>
-        Im always interested in new opportunities and especially new
-        technologies, please don't hesitate to reach out!
-      </p>
-      <p><a href="mailto:jribarich98@gmail.com">Email me</a></p>
-    </section>
+    <div class="gradient"></div>
+    <div class="section-dkblue">
+      <section id="projects">
+        <h2>Projects I am proud of</h2>
+        <article>
+          <div class="text">
+            <h4>Latest Project</h4>
+            <h3>Caribu</h3>
+            <p class="blackbox">
+              Caribu is an application that assists developers in migrating
+              their monolithic applications into a micro-service based
+              architecture. It allows developers to view their applications code
+              piece by piece, displaying which functions are eligible to become
+              serverless, and which need refactoring.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>TypeScript</li>
+              <li>React/Router/Redux Toolkit</li>
+              <li>Electron</li>
+              <li>Express</li>
+              <li>Babel</li>
+            </ul>
+          </div>
+          <img src="assets/Screenshot 2023-04-20 at 4.05.37 PM.png" alt="" />
+        </article>
+        <article class="reverse">
+          <div class="text">
+            <h4>Live Activity Tracker</h4>
+            <h3>CoffeeTime 2.0</h3>
+            <p class="blackbox">
+              CoffeeTime allows users to securely login and post activities for
+              other users to see. Each user has the ability to join an activity
+              for all users to see who is attending.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>React/Redux</li>
+              <li>WebSocket</li>
+              <li>JWT</li>
+            </ul>
+          </div>
+          <img src="assets/CoffeeTime.png" alt="" />
+        </article>
+        <article>
+          <div class="text">
+            <h4>Soft Skills Practice Tool</h4>
+            <h3>SoftI</h3>
+            <p class="blackbox">
+              Most developers get wrapped up in practicing only technical skills
+              when interviewing for jobs. SoftI allows you to practice the soft
+              skills of the interview process as well as recording and saving
+              each attempt.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>React/Redux</li>
+              <li>Amazon S3</li>
+              <li>React Webcam Library</li>
+            </ul>
+          </div>
+          <img src="assets/SoftI.png" alt="" />
+        </article>
+      </section>
+    </div>
+    <div class="gradient"></div>
+    <div class="section-plum">
+      <section id="contact">
+        <h2>Contact me</h2>
+        <p>
+          Im always interested in new opportunities and especially new
+          technologies, please don't hesitate to reach out!
+        </p>
+        <p>
+          <a href="mailto:jribarich98@gmail.com" class="button">Email me</a>
+        </p>
+      </section>
+    </div>
+    <div class="gradient"></div>
     <footer>
       <h3>Justin Ribarich | Software Engineer</h3>
       <ul>
