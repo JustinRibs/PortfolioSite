@@ -145,7 +145,7 @@ a:not(.button):hover::after {
 img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-md);
 }
 
 /* Hero/Intro Styles */
