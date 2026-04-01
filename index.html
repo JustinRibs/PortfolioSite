@@ -28,14 +28,14 @@
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/"
+          <a href="https://www.linkedin.com/in/justin-ribarich/" target="_blank" rel="noopener noreferrer"
             ><span class="fa-brands fa-linkedin" aria-hidden="true"
               ><span class="sr-only">LinkedIn</span></span
             ></a
           >
         </li>
         <li>
-          <a href="https://github.com/JustinRibs"
+          <a href="https://github.com/JustinRibs" target="_blank" rel="noopener noreferrer"
             ><span aria-hidden="true" class="fa-brands fa-github-alt"
               ><span class="sr-only">Github</span></span
             ></a
@@ -45,6 +45,8 @@
           <a
             href="https://www.dropbox.com/scl/fi/ufdzd7vec42nyxe1bz0r9/Justin-RIbarich-Resume.pdf?rlkey=xdapxt7xzvj9656ijko78mmpc&st=sauq4lji&dl=0"
             class="button"
+            target="_blank"
+            rel="noopener noreferrer"
             >Resume</a
           >
         </li>
@@ -58,7 +60,11 @@
         Most recently I worked with a team of engineers on
         <a href="https://www.caribujs.com/">Caribu</a>
       </p> -->
-      <p><em>“All we have to decide is what to do with the time that is given to us” </em> - Gandalf</p>
+      <div class=”hero-cta”>
+        <a href=”#projects” class=”button”>View My Work</a>
+        <a href=”#contact” class=”button-ghost”>Contact Me</a>
+      </div>
+      <p><em>”All we have to decide is what to do with the time that is given to us” </em> - Gandalf</p>
     </section>
     <div class="gradient"></div>
     <div class="section-dkblue">
@@ -86,6 +92,9 @@
               <li>Docker</li>
               <li>REDcap API</li>
             </ul>
+            <div class="project-links">
+              <span class="project-private"><i class="fa-solid fa-lock"></i> Private Repository</span>
+            </div>
           </div>
           <img src="https://i.ibb.co/qFkgpSZj/Screenshot-2026-01-22-at-3-26-01-PM.png" alt="f4cbXje.md.png">
         </article>
@@ -104,6 +113,9 @@
               <li>Blade</li>
               <li>MySQL</li>
             </ul>
+            <div class="project-links">
+              <a href="https://github.com/JustinRibs/larajobs" class="project-link-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i> GitHub</a>
+            </div>
           </div>
           <img src="https://images2.imgbox.com/ab/c5/mKOTg7X6_o.png" alt="" />
         </article>
@@ -122,6 +134,9 @@
               <li>MySQL</li>
               <li>Tailwind</li>
             </ul>
+            <div class="project-links">
+              <a href="https://github.com/JustinRibs/RibsRescueDesk" class="project-link-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i> GitHub</a>
+            </div>
           </div>
           <img
             src="https://i.postimg.cc/15q8pJB8/Screenshot-2024-08-12-at-4-40-13-PM.png"
@@ -169,14 +184,14 @@
       <h3>Justin Ribarich | Software Engineer</h3>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/"
+          <a href="https://www.linkedin.com/in/justin-ribarich/" target="_blank" rel="noopener noreferrer"
             ><span class="fa-brands fa-linkedin" aria-hidden="true"
               ><span class="sr-only">LinkedIn</span></span
             ></a
           >
         </li>
         <li>
-          <a href="https://github.com/JustinRibs"
+          <a href="https://github.com/JustinRibs" target="_blank" rel="noopener noreferrer"
             ><span aria-hidden="true" class="fa-brands fa-github-alt"
               ><span class="sr-only">Github</span></span
             ></a
@@ -188,7 +203,24 @@
           ></a>
         </li>
       </ul>
-      <p><small>© 2024 Justin Ribarich. All rights reserved.</small></p>
+      <p><small>© 2026 Justin Ribarich. All rights reserved.</small></p>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const articles = document.querySelectorAll('article');
+        articles.forEach(article => article.classList.add('fade-in-card'));
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        articles.forEach(article => observer.observe(article));
+      });
+    </script>
   </body>
 </html>
