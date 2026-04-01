@@ -2,89 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="croatia.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/1cebc5a491.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Justin Ribarich Portfolio</title>
+    <script src="https://kit.fontawesome.com/1cebc5a491.js" crossorigin="anonymous"></script>
+    <title>Justin Ribarich — Software Engineer</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <h1>
-            <a href="index.html"
-              ><img src="croatia.png" style="width: 1.5rem;">
-              
-              <span>Justin Ribarich</span></a
-            >
-          </h1>
-        </li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/" target="_blank" rel="noopener noreferrer"
-            ><span class="fa-brands fa-linkedin" aria-hidden="true"
-              ><span class="sr-only">LinkedIn</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/JustinRibs" target="_blank" rel="noopener noreferrer"
-            ><span aria-hidden="true" class="fa-brands fa-github-alt"
-              ><span class="sr-only">Github</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.dropbox.com/scl/fi/ufdzd7vec42nyxe1bz0r9/Justin-RIbarich-Resume.pdf?rlkey=xdapxt7xzvj9656ijko78mmpc&st=sauq4lji&dl=0"
-            class="button"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <section id="intro">
-      <p class="name">Hi, my name is <span>Justin Ribarich.</span></p>
-      <h2>I am a Software Engineer</h2>
-      <p>I specialize in Full Stack Development.</p>
-      <!-- <p>
-        Most recently I worked with a team of engineers on
-        <a href="https://www.caribujs.com/">Caribu</a>
-      </p> -->
-      <div class=”hero-cta”>
-        <a href=”#projects” class=”button”>View My Work</a>
-        <a href=”#contact” class=”button-ghost”>Contact Me</a>
+
+    <!-- =====================
+         NAVIGATION
+         ===================== -->
+    <nav id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">
+          <img src="croatia.png" alt="" aria-hidden="true" />
+          <span>Justin Ribarich</span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><span class="nav-sep" aria-hidden="true"></span></li>
+          <li>
+            <a href="https://www.linkedin.com/in/justin-ribarich/" class="nav-icon"
+               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JustinRibs" class="nav-icon"
+               target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.dropbox.com/scl/fi/ufdzd7vec42nyxe1bz0r9/Justin-RIbarich-Resume.pdf?rlkey=xdapxt7xzvj9656ijko78mmpc&st=sauq4lji&dl=0"
+               class="btn btn-primary"
+               target="_blank" rel="noopener noreferrer">Resume</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hbar"></span>
+          <span class="hbar"></span>
+          <span class="hbar"></span>
+        </button>
       </div>
-      <p><em>”All we have to decide is what to do with the time that is given to us” </em> - Gandalf</p>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="#about"    class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact"  class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="https://www.linkedin.com/in/justin-ribarich/" class="mobile-social"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/JustinRibs" class="mobile-social"
+           target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github-alt"></i>
+        </a>
+        <a href="https://www.dropbox.com/scl/fi/ufdzd7vec42nyxe1bz0r9/Justin-RIbarich-Resume.pdf?rlkey=xdapxt7xzvj9656ijko78mmpc&st=sauq4lji&dl=0"
+           class="btn btn-primary"
+           target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </div>
+
+    <!-- =====================
+         HERO
+         ===================== -->
+    <section id="hero">
+      <div class="container">
+        <p class="hero-label">Hi, my name is</p>
+        <h1 class="hero-name">Justin Ribarich.</h1>
+        <h2 class="hero-role">Software Engineer</h2>
+        <p class="hero-sub">I specialize in Full Stack Development.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact"  class="btn btn-outline">Get in Touch</a>
+        </div>
+        <blockquote class="hero-quote">
+          "All we have to decide is what to do with the time that is given to us" — Gandalf
+        </blockquote>
+      </div>
     </section>
-    <div class="gradient"></div>
-    <div class="section-dkblue">
-      <section id="projects">
-        <h2>Projects I am proud of</h2>
-        <article>
-          <div class="text">
-            <h4>Latest Project</h4>
-            <h3>Mentee Map</h3>
-            <p class="blackbox">
-              Mentee Map is a web application designed to help faculty efficiently
-              monitor mentee goals, performance, and academic progress. The platform
-              presents mentee survey insights through a clean, intuitive interface,
-              enabling mentors to quickly identify strengths, trends, and areas for
-              improvement. It also provides streamlined access to exam scores with
-              advanced filtering and search tools, allowing faculty to make data-driven
-              decisions with ease.
+
+    <!-- =====================
+         ABOUT
+         ===================== -->
+    <section id="about">
+      <div class="container">
+        <span class="section-eyebrow reveal">01 — About</span>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hello world! I'm Justin, a passionate software engineer specializing in
+              full-stack development with a love for creating innovative solutions. I've
+              had the privilege of working on exciting projects where I help transform
+              ideas into powerful applications that make a real difference.
             </p>
-            <h4>Technologies used include:</h4>
-            <ul>
+            <p>
+              When I'm not immersed in code, you'll find me pursuing my other passions:
+              competing on the hockey rink, hitting the trails for a run, or exploring
+              new destinations around the world. I believe staying active and curious
+              keeps me sharp both as a developer and as a person.
+            </p>
+            <p>
+              Whether you're interested in discussing technology, potential
+              collaborations, or just want to chat about life, I'd love to connect!
+            </p>
+            <p class="tech-list-label">Favorite Technologies</p>
+            <ul class="tech-chips">
+              <li class="chip">JavaScript</li>
+              <li class="chip">React</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Laravel</li>
+              <li class="chip">Linux</li>
+            </ul>
+          </div>
+          <div class="about-photo-col">
+            <div class="photo-frame">
+              <img src="https://i.postimg.cc/R0W9B2cm/IMG-9396.jpg" alt="Justin Ribarich" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         PROJECTS
+         ===================== -->
+    <section id="projects">
+      <div class="container">
+        <span class="section-eyebrow reveal">02 — Work</span>
+        <h2 class="reveal">Things I've Built</h2>
+        <div class="projects-grid">
+
+          <!-- Mentee Map -->
+          <article class="project-card reveal stagger-1">
+            <div class="card-top">
+              <span class="card-eyebrow">Latest Project</span>
+              <span class="card-private">
+                <i class="fa-solid fa-lock" aria-hidden="true"></i> Private
+              </span>
+            </div>
+            <h3 class="project-name">Mentee Map</h3>
+            <p class="project-desc">
+              A web application designed to help faculty efficiently monitor mentee
+              goals, performance, and academic progress. Presents survey insights
+              through a clean interface with advanced filtering and search tools,
+              enabling data-driven decisions with ease.
+            </p>
+            <ul class="project-stack">
               <li>Laravel</li>
               <li>React</li>
               <li>MySQL</li>
@@ -92,134 +170,162 @@
               <li>Docker</li>
               <li>REDcap API</li>
             </ul>
-            <div class="project-links">
-              <span class="project-private"><i class="fa-solid fa-lock"></i> Private Repository</span>
+          </article>
+
+          <!-- LaraJobs -->
+          <article class="project-card reveal stagger-2">
+            <div class="card-top">
+              <span class="card-eyebrow">Laravel Job Finder</span>
+              <a href="https://github.com/JustinRibs/larajobs" class="card-icon-link"
+                 target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                <i class="fa-brands fa-github-alt"></i>
+              </a>
             </div>
-          </div>
-        </article>
-        <article class="reverse">
-          <div class="text">
-            <h4>Laravel Job Finder</h4>
-            <h3>LaraJobs</h3>
-            <p class="blackbox">
-              LaraJobs allows users to securely login and view job postings
-              involving the Laravel framework as well as post their own jobs.
+            <h3 class="project-name">LaraJobs</h3>
+            <p class="project-desc">
+              Allows users to securely login and view job postings involving the
+              Laravel framework, as well as post their own job listings.
             </p>
-            <h4>Technologies used include:</h4>
-            <ul>
+            <div class="project-img">
+              <img src="https://images2.imgbox.com/ab/c5/mKOTg7X6_o.png"
+                   alt="LaraJobs screenshot" loading="lazy" />
+            </div>
+            <ul class="project-stack">
               <li>Laravel</li>
               <li>PHP</li>
               <li>Blade</li>
               <li>MySQL</li>
             </ul>
-            <div class="project-links">
-              <a href="https://github.com/JustinRibs/larajobs" class="project-link-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i> GitHub</a>
+          </article>
+
+          <!-- RibsRescueDesk -->
+          <article class="project-card reveal stagger-3">
+            <div class="card-top">
+              <span class="card-eyebrow">IT Service Desk</span>
+              <a href="https://github.com/JustinRibs/RibsRescueDesk" class="card-icon-link"
+                 target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                <i class="fa-brands fa-github-alt"></i>
+              </a>
             </div>
-          </div>
-          <img src="https://images2.imgbox.com/ab/c5/mKOTg7X6_o.png" alt="" />
-        </article>
-        <article>
-          <div class="text">
-            <h4>IT Service Desk</h4>
-            <h3>RibsRescueDesk</h3>
-            <p class="blackbox">
-              RibsRescueDesk is the one and done application for all
-              IT departments. Users can sign and submit tickets for different categories,
-              and Admins can assign and respond to tickets.
+            <h3 class="project-name">RibsRescueDesk</h3>
+            <p class="project-desc">
+              The one-stop application for all IT departments. Users can submit
+              tickets for different categories, and admins can assign and respond
+              to tickets with full tracking.
             </p>
-            <h4>Technologies used include:</h4>
-            <ul>
+            <div class="project-img">
+              <img src="https://i.postimg.cc/15q8pJB8/Screenshot-2024-08-12-at-4-40-13-PM.png"
+                   alt="RibsRescueDesk screenshot" loading="lazy" />
+            </div>
+            <ul class="project-stack">
               <li>Laravel</li>
               <li>MySQL</li>
               <li>Tailwind</li>
             </ul>
-            <div class="project-links">
-              <a href="https://github.com/JustinRibs/RibsRescueDesk" class="project-link-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i> GitHub</a>
-            </div>
-          </div>
-          <img
-            src="https://i.postimg.cc/15q8pJB8/Screenshot-2024-08-12-at-4-40-13-PM.png"
-            alt=""
-          />
-        </article>
-        <!-- <article class="reverse">
-          <div class="text">
-            <h4>Live Activity Tracker</h4>
-            <h3>CoffeeTime 2.0</h3>
-            <p class="blackbox">
-              CoffeeTime allows users to securely login and post activities for
-              other users to see. Each user has the ability to join an activity
-              for all users to see who is attending.
-            </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-              <li>React/Redux</li>
-              <li>WebSocket</li>
-              <li>JWT</li>
-            </ul>
-          </div>
-          <img
-            src="https://i.postimg.cc/HLnWLr1f/Screenshot-2023-04-20-at-5-29-31-PM.png"
-            alt=""
-          />
-        </article> -->
-      </section>
-    </div>
-    <div class="gradient"></div>
-    <div class="section-plum">
-      <section id="contact">
-        <h2>Contact me</h2>
-        <p>
-          I'm always interested in new opportunities, please don't hesitate to
-          reach out!
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         CONTACT
+         ===================== -->
+    <section id="contact">
+      <div class="container">
+        <span class="section-eyebrow reveal">03 — Contact</span>
+        <h2 class="reveal">Let's Work Together</h2>
+        <p class="contact-sub reveal">
+          I'm always interested in new opportunities. Whether you have a question
+          or just want to say hi, my inbox is always open!
         </p>
-        <p>
-          <a href="mailto:jribarich98@gmail.com" class="button">Email me</a>
-        </p>
-      </section>
-    </div>
-    <div class="gradient"></div>
+        <a href="mailto:jribarich98@gmail.com" class="btn btn-primary btn-lg reveal">
+          Say Hello
+        </a>
+      </div>
+    </section>
+
+    <!-- =====================
+         FOOTER
+         ===================== -->
     <footer>
-      <h3>Justin Ribarich | Software Engineer</h3>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/" target="_blank" rel="noopener noreferrer"
-            ><span class="fa-brands fa-linkedin" aria-hidden="true"
-              ><span class="sr-only">LinkedIn</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/JustinRibs" target="_blank" rel="noopener noreferrer"
-            ><span aria-hidden="true" class="fa-brands fa-github-alt"
-              ><span class="sr-only">Github</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="mailto:jribarich98@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </li>
-      </ul>
-      <p><small>© 2026 Justin Ribarich. All rights reserved.</small></p>
+      <div class="container">
+        <p class="footer-brand">Justin Ribarich</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://www.linkedin.com/in/justin-ribarich/"
+               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JustinRibs"
+               target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:jribarich98@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-copy">© 2026 Justin Ribarich. All rights reserved.</p>
+      </div>
     </footer>
+
+    <!-- =====================
+         SCRIPTS
+         ===================== -->
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const articles = document.querySelectorAll('article');
-        articles.forEach(article => article.classList.add('fade-in-card'));
+      (() => {
+        const hamburger  = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const nav        = document.getElementById('nav');
 
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
+        // --- Hamburger toggle ---
+        hamburger.addEventListener('click', () => {
+          const isOpen = hamburger.classList.toggle('open');
+          mobileMenu.classList.toggle('open');
+          hamburger.setAttribute('aria-expanded', isOpen);
+          mobileMenu.setAttribute('aria-hidden', !isOpen);
+          document.body.classList.toggle('menu-open', isOpen);
+        });
+
+        // Close menu when a mobile nav link is tapped
+        mobileMenu.querySelectorAll('.mobile-nav-link, .btn').forEach(el => {
+          el.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('menu-open');
           });
-        }, { threshold: 0.1 });
+        });
 
-        articles.forEach(article => observer.observe(article));
-      });
+        // --- Nav shadow on scroll ---
+        window.addEventListener('scroll', () => {
+          nav.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // --- Scroll reveal ---
+        const targets = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1 });
+          targets.forEach(el => io.observe(el));
+        } else {
+          // Fallback for old browsers
+          targets.forEach(el => el.classList.add('visible'));
+        }
+      })();
     </script>
+
   </body>
 </html>
