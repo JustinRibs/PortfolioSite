@@ -4,103 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about Justin Ribarich, a full-stack software engineer focused on Laravel, React, APIs, and practical web applications."
+    />
     <link rel="icon" type="image/x-icon" href="croatia.png" />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/1cebc5a491.js"
       crossorigin="anonymous"
     ></script>
-    <title>Justin Ribarich Portfolio</title>
+    <title>About Justin Ribarich | Software Engineer</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <h1>
-            <a href="index.html"
-              ><img src="croatia.png" style="width: 1.5rem;">
-              <span>Justin Ribarich</span></a
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Justin Ribarich home">
+          <img src="croatia.png" alt="" />
+          <span>Justin Ribarich</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/justin-ribarich/"
+              aria-label="LinkedIn"
             >
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icon-link"
+              href="https://github.com/JustinRibs"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="button button-small"
+              href="Justin-Ribarich-Resume.pdf"
+            >
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-hero" aria-labelledby="about-title">
+        <div class="about-copy">
+          <p class="eyebrow">About Justin</p>
+          <h1 id="about-title">
+            I am a full-stack engineer who likes building software that people
+            can actually use every day.
           </h1>
-        </li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/"
-            ><span class="fa-brands fa-linkedin" aria-hidden="true"
-              ><span class="sr-only">LinkedIn</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/JustinRibs"
-            ><span aria-hidden="true" class="fa-brands fa-github-alt"
-              ><span class="sr-only">Github</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.dropbox.com/scl/fi/ufdzd7vec42nyxe1bz0r9/Justin-RIbarich-Resume.pdf?rlkey=xdapxt7xzvj9656ijko78mmpc&st=sauq4lji&dl=0"
-            class="button"
-            >Resume</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <div class="section-dkblue">
-      <section id="projects">
-        <h2>About Justin</h2>
-        <article>
-          <div class="text">
-            <h3>Highlights</h3>
-            <p class="blackbox">
-              Hello world! I'm Justin, a passionate software engineer specializing in full-stack development with a love for creating innovative solutions. I've had the privilege of working on exciting projects like CoffeeTime 2.0 and most recently, Caribu, where I help transform ideas into powerful applications that make a real difference.
-              <br><br>
-              When I'm not immersed in code, you'll find me pursuing my other passions: competing on the hockey rink, hitting the trails for a run, or exploring new destinations around the world. I believe staying active and curious keeps me sharp both as a developer and as a person.
-              <br><br>
-              Whether you're interested in discussing technology, potential collaborations, or just want to chat about life, I'd love to connect! Feel free to reach out on LinkedIn or drop me an email. Thanks for stopping by!
-            </p>
-            <h4>Favorite Technologies</h4>
-            <ul>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Docker</li>
-              <li>Laravel</li>
-              <li>Linux Distributions</li>
-            </ul>
-          </div>
-          <img src="https://i.postimg.cc/R0W9B2cm/IMG-9396.jpg" alt="" />
-        </article>
+          <p>
+            My work tends to live where product, data, and operations meet:
+            dashboards, workflow tools, authenticated web apps, APIs, and clean
+            interfaces for busy users.
+          </p>
+          <p>
+            I enjoy owning the full path from database structure to user-facing
+            polish. The backend needs to be reliable, the interface needs to be
+            clear, and the final product needs to make someone&apos;s day easier.
+          </p>
+        </div>
+        <div class="portrait-frame">
+          <img
+            src="assets/justin-ribarich.jpg"
+            alt="Justin Ribarich outdoors while traveling"
+          />
+        </div>
       </section>
-    </div>
-    <div class="gradient"></div>
-    <div class="gradient"></div>
-    <footer>
-      <h3>Justin Ribarich | Software Engineer</h3>
+
+      <section class="about-detail" aria-labelledby="bring-title">
+        <div class="section-heading align-left">
+          <p class="eyebrow">What I bring</p>
+          <h2 id="bring-title">Steady full-stack execution with product instincts.</h2>
+        </div>
+        <div class="detail-grid">
+          <section>
+            <h3>Builder mindset</h3>
+            <p>
+              I like turning loose requirements into working software, then
+              tightening the experience until it feels obvious to use.
+            </p>
+          </section>
+          <section>
+            <h3>Backend confidence</h3>
+            <p>
+              Laravel, MySQL, authentication, APIs, data relationships, and
+              debugging are comfortable parts of my day-to-day work.
+            </p>
+          </section>
+          <section>
+            <h3>Frontend care</h3>
+            <p>
+              I pay attention to layout, hierarchy, responsive behavior, and the
+              small details that make a tool feel trustworthy.
+            </p>
+          </section>
+          <section>
+            <h3>Team energy</h3>
+            <p>
+              Outside of code, hockey, running, and travel keep me competitive,
+              curious, and good at showing up for a group.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="stack-section about-stack" aria-labelledby="favorite-title">
+        <div>
+          <p class="eyebrow">Favorite tools</p>
+          <h2 id="favorite-title">Technologies I reach for often.</h2>
+        </div>
+        <ul class="large-tag-list">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Laravel</li>
+          <li>PHP</li>
+          <li>Docker</li>
+          <li>MySQL</li>
+          <li>Redis</li>
+          <li>Linux</li>
+        </ul>
+      </section>
+
+      <section class="contact-section" aria-labelledby="about-contact-title">
+        <p class="eyebrow">Let&apos;s talk</p>
+        <h2 id="about-contact-title">I am looking for teams where useful software matters.</h2>
+        <p>
+          If your team needs a full-stack engineer who can move between product
+          conversations, backend logic, and polished UI, I would be glad to connect.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:jribarich98@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            Email Justin
+          </a>
+          <a class="button button-secondary" href="index.html#work">
+            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+            View work
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Justin Ribarich | Full-Stack Software Engineer</p>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/"
-            ><span class="fa-brands fa-linkedin" aria-hidden="true"
-              ><span class="sr-only">LinkedIn</span></span
-            ></a
-          >
+          <a href="https://www.linkedin.com/in/justin-ribarich/" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
         </li>
         <li>
-          <a href="https://github.com/JustinRibs"
-            ><span aria-hidden="true" class="fa-brands fa-github-alt"
-              ><span class="sr-only">Github</span></span
-            ></a
-          >
+          <a href="https://github.com/JustinRibs" aria-label="GitHub">
+            <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+          </a>
         </li>
         <li>
-          <a href="mailto:jribarich98@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+          <a href="mailto:jribarich98@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
         </li>
       </ul>
-      <p><small>© 2025 Justin Ribarich. All rights reserved.</small></p>
+      <small>&copy; 2026 Justin Ribarich. All rights reserved.</small>
     </footer>
   </body>
 </html>

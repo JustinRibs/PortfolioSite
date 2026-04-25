@@ -4,191 +4,300 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Justin Ribarich is a full-stack software engineer building Laravel, React, and data-driven web applications for real teams."
+    />
     <link rel="icon" type="image/x-icon" href="croatia.png" />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/1cebc5a491.js"
       crossorigin="anonymous"
     ></script>
-    <title>Justin Ribarich Portfolio</title>
+    <title>Justin Ribarich | Full-Stack Software Engineer</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <h1>
-            <a href="index.html"
-              ><img src="croatia.png" style="width: 1.5rem;">
-              
-              <span>Justin Ribarich</span></a
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Justin Ribarich home">
+          <img src="croatia.png" alt="" />
+          <span>Justin Ribarich</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/justin-ribarich/"
+              aria-label="LinkedIn"
             >
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icon-link"
+              href="https://github.com/JustinRibs"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="button button-small"
+              href="Justin-Ribarich-Resume.pdf"
+            >
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Full-stack software engineer</p>
+          <h1 id="hero-title">
+            I build practical web applications that make messy workflows easier
+            to run.
           </h1>
-        </li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/"
-            ><span class="fa-brands fa-linkedin" aria-hidden="true"
-              ><span class="sr-only">LinkedIn</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/JustinRibs"
-            ><span aria-hidden="true" class="fa-brands fa-github-alt"
-              ><span class="sr-only">Github</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.dropbox.com/scl/fi/ufdzd7vec42nyxe1bz0r9/Justin-RIbarich-Resume.pdf?rlkey=xdapxt7xzvj9656ijko78mmpc&st=sauq4lji&dl=0"
-            class="button"
-            >Resume</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <section id="intro">
-      <p class="name">Hi, my name is <span>Justin Ribarich.</span></p>
-      <h2>I am a Software Engineer</h2>
-      <p>I specialize in Full Stack Development.</p>
-      <!-- <p>
-        Most recently I worked with a team of engineers on
-        <a href="https://www.caribujs.com/">Caribu</a>
-      </p> -->
-      <p><em>“All we have to decide is what to do with the time that is given to us” </em> - Gandalf</p>
-    </section>
-    <div class="gradient"></div>
-    <div class="section-dkblue">
-      <section id="projects">
-        <h2>Projects I am proud of</h2>
-        <article>
-          <div class="text">
-            <h4>Latest Project</h4>
+          <p class="hero-lede">
+            I work across Laravel, React, MySQL, Docker, and APIs to turn
+            operational problems into reliable tools for faculty, service teams,
+            and growing organizations.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button" href="#work">
+              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              View selected work
+            </a>
+            <a class="button button-secondary" href="mailto:jribarich98@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Email Justin
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Engineering profile summary">
+          <p class="panel-kicker">Current focus</p>
+          <h2>Data-heavy internal tools with clean user experiences.</h2>
+          <div class="signal-grid">
+            <section>
+              <h3>Primary stack</h3>
+              <p>Laravel, React, MySQL</p>
+            </section>
+            <section>
+              <h3>Strength</h3>
+              <p>Full-stack delivery</p>
+            </section>
+            <section>
+              <h3>Workflow</h3>
+              <p>APIs, Docker, Redis</p>
+            </section>
+          </div>
+        </aside>
+      </section>
+
+      <section class="proof-strip" aria-label="Portfolio highlights">
+        <div>
+          <span>01</span>
+          <p>Built tools around academic progress, mentoring, and service desk workflows.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Comfortable owning backend data models and frontend product polish.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Focused on interfaces people can scan, search, filter, and trust.</p>
+        </div>
+      </section>
+
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Projects with a real product story.</h2>
+          <p>
+            These projects show the kind of engineering I like most: useful
+            systems, clear data, and interfaces that help people act faster.
+          </p>
+        </div>
+
+        <article class="project-card project-featured">
+          <div class="project-media">
+            <img
+              src="assets/mentee-map.png"
+              alt="Mentee Map dashboard showing class years, student count, advising tools, and administrator profile"
+            />
+          </div>
+          <div class="project-content">
+            <p class="project-label">Featured project</p>
             <h3>Mentee Map</h3>
-            <p class="blackbox">
-              Mentee Map is a web application designed to help faculty efficiently
-              monitor mentee goals, performance, and academic progress. The platform
-              presents mentee survey insights through a clean, intuitive interface,
-              enabling mentors to quickly identify strengths, trends, and areas for
-              improvement. It also provides streamlined access to exam scores with
-              advanced filtering and search tools, allowing faculty to make data-driven
-              decisions with ease.
+            <p class="project-summary">
+              A faculty-facing web application for monitoring mentee goals,
+              survey insights, academic progress, and exam performance in one
+              searchable workspace.
             </p>
-            <h4>Technologies used include:</h4>
-            <ul>
+            <ul class="impact-list">
+              <li>Designed dashboard views that help mentors spot trends and risks quickly.</li>
+              <li>Built filtering and search workflows for exam score exploration.</li>
+              <li>Integrated REDCap data with a Laravel, React, MySQL, Redis, and Docker stack.</li>
+            </ul>
+            <ul class="tag-list" aria-label="Technologies used for Mentee Map">
               <li>Laravel</li>
               <li>React</li>
               <li>MySQL</li>
               <li>Redis</li>
               <li>Docker</li>
-              <li>REDcap API</li>
+              <li>REDCap API</li>
             </ul>
+            <div class="project-actions">
+              <a
+                class="button button-secondary"
+                href="mailto:jribarich98@gmail.com?subject=Mentee%20Map%20walkthrough"
+              >
+                <i class="fa-solid fa-display" aria-hidden="true"></i>
+                Request walkthrough
+              </a>
+              <a class="text-link" href="https://github.com/JustinRibs">
+                GitHub profile
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
-          <img src="https://i.ibb.co/qFkgpSZj/Screenshot-2026-01-22-at-3-26-01-PM.png" alt="f4cbXje.md.png">
         </article>
-        <article class="reverse">
-          <div class="text">
-            <h4>Laravel Job Finder</h4>
-            <h3>LaraJobs</h3>
-            <p class="blackbox">
-              LaraJobs allows users to securely login and view job postings
-              involving the Laravel framework as well as post their own jobs.
-            </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-              <li>Laravel</li>
-              <li>PHP</li>
-              <li>Blade</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-          <img src="https://images2.imgbox.com/ab/c5/mKOTg7X6_o.png" alt="" />
-        </article>
-        <article>
-          <div class="text">
-            <h4>IT Service Desk</h4>
-            <h3>RibsRescueDesk</h3>
-            <p class="blackbox">
-              RibsRescueDesk is the one and done application for all
-              IT departments. Users can sign and submit tickets for different categories,
-              and Admins can assign and respond to tickets.
-            </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-              <li>Laravel</li>
-              <li>MySQL</li>
-              <li>Tailwind</li>
-            </ul>
-          </div>
-          <img
-            src="https://i.postimg.cc/15q8pJB8/Screenshot-2024-08-12-at-4-40-13-PM.png"
-            alt=""
-          />
-        </article>
-        <!-- <article class="reverse">
-          <div class="text">
-            <h4>Live Activity Tracker</h4>
-            <h3>CoffeeTime 2.0</h3>
-            <p class="blackbox">
-              CoffeeTime allows users to securely login and post activities for
-              other users to see. Each user has the ability to join an activity
-              for all users to see who is attending.
-            </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-              <li>React/Redux</li>
-              <li>WebSocket</li>
-              <li>JWT</li>
-            </ul>
-          </div>
-          <img
-            src="https://i.postimg.cc/HLnWLr1f/Screenshot-2023-04-20-at-5-29-31-PM.png"
-            alt=""
-          />
-        </article> -->
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                src="assets/larajobs.png"
+                alt="LaraJobs job board interface for Laravel job listings"
+              />
+            </div>
+            <div class="project-content">
+              <p class="project-label">Laravel job board</p>
+              <h3>LaraJobs</h3>
+              <p class="project-summary">
+                A Laravel job board where users can authenticate, browse Laravel
+                roles, and publish new job postings through a simple Blade and
+                MySQL application.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used for LaraJobs">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>Blade</li>
+                <li>MySQL</li>
+              </ul>
+              <div class="project-actions">
+                <a class="text-link" href="https://github.com/JustinRibs">
+                  View code work
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                src="assets/ribs-rescue-desk.png"
+                alt="RibsRescueDesk service desk dashboard for IT ticket management"
+              />
+            </div>
+            <div class="project-content">
+              <p class="project-label">Service desk workflow</p>
+              <h3>RibsRescueDesk</h3>
+              <p class="project-summary">
+                A ticketing app for IT departments where users submit categorized
+                support requests and admins can triage, assign, and respond to
+                tickets.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used for RibsRescueDesk">
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>Tailwind</li>
+              </ul>
+              <div class="project-actions">
+                <a class="text-link" href="https://github.com/JustinRibs">
+                  View code work
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
-    </div>
-    <div class="gradient"></div>
-    <div class="section-plum">
-      <section id="contact">
-        <h2>Contact me</h2>
-        <p>
-          I'm always interested in new opportunities, please don't hesitate to
-          reach out!
-        </p>
-        <p>
-          <a href="mailto:jribarich98@gmail.com" class="button">Email me</a>
-        </p>
+
+      <section class="stack-section" aria-labelledby="stack-title">
+        <div>
+          <p class="eyebrow">How I work</p>
+          <h2 id="stack-title">I like the full path from data model to polished screen.</h2>
+        </div>
+        <div class="stack-columns">
+          <section>
+            <h3>Backend</h3>
+            <p>Laravel, PHP, MySQL, Redis, authentication, APIs, and practical data modeling.</p>
+          </section>
+          <section>
+            <h3>Frontend</h3>
+            <p>React, Blade, Tailwind, accessible UI patterns, and interfaces built for scanning.</p>
+          </section>
+          <section>
+            <h3>Delivery</h3>
+            <p>Docker, Linux workflows, debugging, iterative product thinking, and team communication.</p>
+          </section>
+        </div>
       </section>
-    </div>
-    <div class="gradient"></div>
-    <footer>
-      <h3>Justin Ribarich | Software Engineer</h3>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <p class="eyebrow">Open to opportunities</p>
+        <h2 id="contact-title">Need someone who can build useful software and keep improving it?</h2>
+        <p>
+          I am interested in full-stack roles where I can work close to product
+          problems, backend systems, and the people who depend on them.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:jribarich98@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            Start a conversation
+          </a>
+          <a
+            class="button button-secondary"
+            href="Justin-Ribarich-Resume.pdf"
+          >
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+            Resume
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Justin Ribarich | Full-Stack Software Engineer</p>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/justin-ribarich/"
-            ><span class="fa-brands fa-linkedin" aria-hidden="true"
-              ><span class="sr-only">LinkedIn</span></span
-            ></a
-          >
+          <a href="https://www.linkedin.com/in/justin-ribarich/" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
         </li>
         <li>
-          <a href="https://github.com/JustinRibs"
-            ><span aria-hidden="true" class="fa-brands fa-github-alt"
-              ><span class="sr-only">Github</span></span
-            ></a
-          >
+          <a href="https://github.com/JustinRibs" aria-label="GitHub">
+            <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+          </a>
         </li>
         <li>
-          <a href="mailto:jribarich98@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+          <a href="mailto:jribarich98@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
         </li>
       </ul>
-      <p><small>© 2024 Justin Ribarich. All rights reserved.</small></p>
+      <small>&copy; 2026 Justin Ribarich. All rights reserved.</small>
     </footer>
   </body>
 </html>
