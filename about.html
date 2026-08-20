@@ -9,7 +9,7 @@
       content="Learn more about Justin Ribarich, a full-stack software engineer focused on Laravel, React, APIs, and practical web applications."
     />
     <link rel="icon" type="image/x-icon" href="croatia.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
     <script
       src="https://kit.fontawesome.com/1cebc5a491.js"
       crossorigin="anonymous"
@@ -17,6 +17,8 @@
     <title>About Justin Ribarich | Software Engineer</title>
   </head>
   <body>
+    <div class="flag-strip" aria-hidden="true"></div>
+
     <header class="site-header">
       <nav class="nav-shell" aria-label="Main navigation">
         <a class="brand" href="index.html" aria-label="Justin Ribarich home">
@@ -46,10 +48,7 @@
             </a>
           </li>
           <li>
-            <a
-              class="button button-small"
-              href="Justin-Ribarich-Resume.pdf"
-            >
+            <a class="button button-small" href="Justin-Ribarich-Resume.pdf">
               <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
               Resume
             </a>
@@ -61,17 +60,19 @@
     <main>
       <section class="about-hero" aria-labelledby="about-title">
         <div class="about-copy">
-          <p class="eyebrow">About Justin</p>
-          <h1 id="about-title">
-            I am a full-stack engineer who likes building software that people
-            can actually use every day.
+          <p class="eyebrow reveal-line">
+            <span class="checker-mark" aria-hidden="true"></span>
+            About Justin
+          </p>
+          <h1 id="about-title" class="reveal-line">
+            I like building software that people can actually use every day.
           </h1>
-          <p>
+          <p class="reveal-line">
             My work tends to live where product, data, and operations meet:
             dashboards, workflow tools, authenticated web apps, APIs, and clean
             interfaces for busy users.
           </p>
-          <p>
+          <p class="reveal-line">
             I enjoy owning the full path from database structure to user-facing
             polish. The backend needs to be reliable, the interface needs to be
             clear, and the final product needs to make someone&apos;s day easier.
@@ -85,12 +86,12 @@
         </div>
       </section>
 
-      <section class="about-detail" aria-labelledby="bring-title">
-        <div class="section-heading align-left">
-          <p class="eyebrow">What I bring</p>
-          <h2 id="bring-title">Steady full-stack execution with product instincts.</h2>
-        </div>
-        <div class="detail-grid">
+      <section class="about-detail work-section" aria-labelledby="bring-title">
+        <p class="section-head">What I bring</p>
+        <h2 id="bring-title" class="section-title" data-reveal>
+          Steady full-stack execution with product instincts.
+        </h2>
+        <div class="detail-grid" data-reveal>
           <section>
             <h3>Builder mindset</h3>
             <p>
@@ -124,10 +125,12 @@
 
       <section class="stack-section about-stack" aria-labelledby="favorite-title">
         <div>
-          <p class="eyebrow">Favorite tools</p>
-          <h2 id="favorite-title">Technologies I reach for often.</h2>
+          <p class="section-head">Favorite tools</p>
+          <h2 id="favorite-title" class="section-title" data-reveal>
+            Technologies I reach for often.
+          </h2>
         </div>
-        <ul class="large-tag-list">
+        <ul class="large-tag-list" data-reveal>
           <li>JavaScript</li>
           <li>React</li>
           <li>Laravel</li>
@@ -139,26 +142,32 @@
         </ul>
       </section>
 
-      <section class="contact-section" aria-labelledby="about-contact-title">
-        <p class="eyebrow">Let&apos;s talk</p>
-        <h2 id="about-contact-title">I am looking for teams where useful software matters.</h2>
-        <p>
-          If your team needs a full-stack engineer who can move between product
-          conversations, backend logic, and polished UI, I would be glad to connect.
-        </p>
-        <div class="hero-actions">
-          <a class="button" href="mailto:jribarich98@gmail.com">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            Email Justin
-          </a>
-          <a class="button button-secondary" href="index.html#work">
-            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
-            View work
-          </a>
-        </div>
-      </section>
+      <div class="contact-wrap">
+        <section class="contact-section" aria-labelledby="about-contact-title" data-reveal>
+          <p class="eyebrow">Let&apos;s talk</p>
+          <h2 id="about-contact-title">
+            I am looking for teams where useful software matters.
+          </h2>
+          <p>
+            If your team needs a full-stack engineer who can move between product
+            conversations, backend logic, and polished UI, I would be glad to
+            connect.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="mailto:jribarich98@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Email Justin
+            </a>
+            <a class="button button-on-dark" href="index.html#work">
+              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              View work
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
 
+    <div class="flag-strip" aria-hidden="true"></div>
     <footer class="site-footer">
       <p>Justin Ribarich | Full-Stack Software Engineer</p>
       <ul>
@@ -180,5 +189,7 @@
       </ul>
       <small>&copy; 2026 Justin Ribarich. All rights reserved.</small>
     </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
