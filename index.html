@@ -109,7 +109,7 @@
 
       <section id="work" class="work-section" aria-labelledby="work-title">
         <p class="section-head">
-          Selected work <span class="count">/ 3 projects</span>
+          Selected work <span class="count">/ 4 projects</span>
         </p>
         <h2 id="work-title" class="section-title" data-reveal>
           Projects with a real product story.
@@ -169,10 +169,54 @@
           </div>
         </article>
 
+        <article class="project-card project-featured project-wide" data-reveal>
+          <div class="card-index">
+            <span class="index-num">002</span>
+            <span>Flight Radar</span>
+            <span class="index-meta">Personal build · Hardware + API</span>
+          </div>
+          <div class="project-body">
+            <div class="project-media">
+              <img
+                src="assets/flight-radar.jpg"
+                alt="LED matrix board on a granite counter showing an American Airlines flight from MIA to JFK at 3,000 feet and 267 mph, heading northwest"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Flight Radar</h3>
+              <p class="project-summary">
+                An LED board on my table that shows whichever plane is flying
+                over my house. It also cycles through the weather, the next
+                LIRR train, and a live ground track of the International Space
+                Station.
+              </p>
+              <ul class="impact-list">
+                <li>Wrote the home-server API that turns FlightRadar24, weather, LIRR, and ISS feeds into exactly what the board draws.</li>
+                <li>ESP32 firmware renders every frame on a 64×32 RGB panel and flashes an alert when a military or rare jet passes over.</li>
+                <li>A phone-friendly web app switches modes and logs every flight — nearly 4,800 in a single week.</li>
+              </ul>
+              <ul class="tag-list" aria-label="Technologies used for Flight Radar">
+                <li>ESP32</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-actions">
+                <a class="button button-secondary" href="https://flights.ribarichh.com">
+                  <i class="fa-solid fa-plane-up" aria-hidden="true"></i>
+                  See it live
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
         <div class="project-grid">
           <article class="project-card" data-reveal>
             <div class="card-index">
-              <span class="index-num">002</span>
+              <span class="index-num">003</span>
               <span>Student Attendance System</span>
               <span class="index-meta">Medical school attendance</span>
             </div>
@@ -217,7 +261,7 @@
 
           <article class="project-card" data-reveal>
             <div class="card-index">
-              <span class="index-num">003</span>
+              <span class="index-num">004</span>
               <span>Lab Safety Inspection Dashboard</span>
               <span class="index-meta">Compliance workflow</span>
             </div>
